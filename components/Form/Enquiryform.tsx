@@ -3,7 +3,6 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
-import { useAlert } from "../../hooks/useAlert";
 
 const validationSchema = yup.object({
   email: yup.string().email("Invalid email").required("Email is required"),
@@ -14,15 +13,7 @@ const validationSchema = yup.object({
     .required("Phone Number is required"),
 });
 
-export const Enquiryform = () => {
-  const [notify, setNotify] = useState({
-    open: false,
-    heading: "",
-    message: "",
-    type: "success",
-  });
-  //   const {} = useAlert();
-
+export const Enquiryform = ({ notify, setNotify }: any) => {
   const formik = useFormik({
     initialValues: {
       company: "",
@@ -32,7 +23,13 @@ export const Enquiryform = () => {
     validationSchema: validationSchema,
     onSubmit: (values: object, { resetForm }: any) => {
       console.log(values);
-      formSubmitHandler(values);
+      //   formSubmitHandler(values);
+      setNotify({
+        open: true,
+        heading: "Your email has been sent successfully!",
+        message: "Our team will reach out to you soon.",
+        type: "success",
+      });
     },
   });
 

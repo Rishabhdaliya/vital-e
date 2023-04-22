@@ -7,7 +7,6 @@ import styles from "../../styles/contact.module.css";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
-import { useAlert } from "../../hooks/useAlert";
 import { Snackbar } from "@/components/UI/Snackbar";
 
 const validationSchema = yup.object({
@@ -46,14 +45,13 @@ const index = () => {
     validationSchema: validationSchema,
     onSubmit: (values: object, { resetForm }: any) => {
       if (agreed) {
-        console.log(values);
         setNotify({
           open: true,
           heading: "Your email has been sent successfully!",
           message: "Our team will reach out to you soon.",
           type: "success",
         });
-        // formSubmitHandler(values);
+        formSubmitHandler(values);
       } else {
         setNotify({
           open: true,
@@ -90,7 +88,12 @@ const index = () => {
           });
         },
         (error) => {
-          console.log(error.text);
+          setNotify({
+            open: true,
+            heading: "Email failed to submit",
+            message: `error.text`,
+            type: "error",
+          });
         }
       );
   };
