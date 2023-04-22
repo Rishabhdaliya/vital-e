@@ -1,4 +1,3 @@
-import { Snackbar } from "@/components/UI/Snackbar";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 

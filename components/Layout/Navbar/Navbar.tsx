@@ -146,10 +146,12 @@ export const Navbar = () => {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
+                <Image
+                  className="h-15 w-auto"
+                  alt="me"
+                  width="64"
+                  height="64"
+                  src={logo}
                 />
               </a>
               <button
