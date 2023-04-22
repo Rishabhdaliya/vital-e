@@ -11,7 +11,7 @@ export const Snackbar = ({ notify, setNotify }: any) => {
     return () => {
       clearTimeout(timer);
     };
-  }, [notify?.open]);
+  }, [notify]);
 
   return (
     <>

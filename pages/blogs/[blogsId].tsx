@@ -1,5 +1,7 @@
 import React from "react";
 
-export const blogsId = () => {
+const blogsId = () => {
   return <div>[blogsId]</div>;
 };
+
+export default blogsId;
