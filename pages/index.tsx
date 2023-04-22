@@ -1,8 +1,16 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { Layout } from "@/components/Layout/Layout";
+import { HeroSection } from "@/components/Hero/HeroSection";
+import { Faq } from "@/components/Faq/Faq";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <h1 className="text-5xl font-bold underline">Hello world!</h1>;
+  return (
+    <Layout>
+      <HeroSection />
+      <Faq />
+    </Layout>
+  );
 }

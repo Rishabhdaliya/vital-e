@@ -2,10 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0px;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+.bg-secondary {
+  background-color: #f1f7ec;
+}
+.bg-secondary-hover {
+  background-color: #edf9e4;
+}
+
+.bg-primary {
+  background: #475d4b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #475d4b,
+    #5d7562
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #475d4b,
+    #5d7562
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-primary {
+  color: #2c3a2f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,4 +43,24 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1224px;
+  padding: 0 22px;
+}
+
+.alert__layout {
+  position: relative;
+}
+
+.alert__content {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
