@@ -105,12 +105,19 @@ export const Contactform = () => {
         <div className="container">
           <div className="isolate bg-white px-6 py-14 sm:py-16 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Become A Distributor
-              </h2>
-              <p className="mt-2 text-lg leading-8 text-gray-600">
-                Aute magna irure deserunt veniam aliqua magna enim voluptate.
-              </p>
+              <div className="relative mt-10">
+                <div
+                  className="absolute inset-0 flex items-center"
+                  aria-hidden="true"
+                >
+                  <div className="w-full border-t border-gray-300" />
+                </div>
+                <div className="relative flex  justify-center">
+                  <span className="bg-white px-3 text-2xl font-bold font-semibold leading-6 text-gray-900">
+                    Become A Distributor
+                  </span>
+                </div>
+              </div>
             </div>
             <form
               onSubmit={formik.handleSubmit}
@@ -324,18 +331,22 @@ export const Contactform = () => {
           <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl space-y-16 lg:mx-0 lg:max-w-none">
-                <div>
-                  <h2 className="text-3xl text-center  font-bold tracking-tight text-gray-900">
-                    Get in touch
-                  </h2>
-                  {/* <p className="mt-4 leading-7 text-gray-600">
-                  Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac
-                  pellentesque.
-                </p> */}
+                <div className="relative mt-10">
+                  <div
+                    className="absolute inset-0 flex items-center"
+                    aria-hidden="true"
+                  >
+                    <div className="w-full border-t border-gray-300" />
+                  </div>
+                  <div className="relative flex  justify-center">
+                    <span className="bg-white px-3 text-2xl font-bold font-semibold leading-6 text-gray-900">
+                      Get In Touch
+                    </span>
+                  </div>
                 </div>
                 <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
-                  <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
-                    <div className="rounded-2xl border-2 bg-gray-50 p-10">
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3 lg:gap-8">
+                    <div className="rounded-2xl border-2 bg-gray-50 p-5">
                       <h3 className="text-base font-semibold leading-7 text-gray-900">
                         Email
                       </h3>
@@ -353,7 +364,7 @@ export const Contactform = () => {
                         </div>
                       </dl>
                     </div>
-                    <div className="rounded-2xl border-2 bg-gray-50 p-10">
+                    <div className="rounded-2xl border-2 bg-gray-50 p-5">
                       <h3 className="text-base font-semibold leading-7 text-gray-900">
                         Phone number
                       </h3>
@@ -368,7 +379,7 @@ export const Contactform = () => {
                         </div>
                       </dl>
                     </div>
-                    <div className="rounded-2xl border-2 bg-gray-50 p-10">
+                    <div className="rounded-2xl border-2 bg-gray-50 p-5">
                       <h3 className="text-base font-semibold leading-7 text-gray-900">
                         Address
                       </h3>

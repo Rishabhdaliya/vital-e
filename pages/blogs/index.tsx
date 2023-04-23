@@ -6,7 +6,9 @@ const index = () => {
   return (
     <div>
       <Layout>
-        <BlogsAll />
+        <div className="mt-10 sm:mt-0">
+          <BlogsAll />
+        </div>
       </Layout>
     </div>
   );

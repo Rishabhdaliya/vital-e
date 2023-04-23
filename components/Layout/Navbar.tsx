@@ -169,12 +169,17 @@ export const Navbar = () => {
                   </Link>
                 </div>
                 <div className="py-6">
-                  <button
-                    // type="submit"
-                    className="block w-full rounded-md bg-secondary text-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-secondary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ="
+                  <Link
+                    href="/contact-us"
+                    className="text-xs font-semibold leading-6 text-white"
                   >
-                    Contact Us
-                  </button>
+                    <button
+                      // type="submit"
+                      className="block w-full rounded-md bg-secondary text-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-secondary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ="
+                    >
+                      Contact Us
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

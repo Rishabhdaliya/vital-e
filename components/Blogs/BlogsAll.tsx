@@ -55,7 +55,7 @@ const posts = [
 
 export const BlogsAll = () => {
   return (
-    <div className="container   max-w-7xl px-6 py-14 sm:py-20 lg:px-8 lg:py-10 ">
+    <div className="container  max-w-7xl px-6 py-14 sm:py-20 lg:px-8 lg:py-10 ">
       <div className="relative">
         <div className="absolute inset-0 flex items-center" aria-hidden="true">
           <div className="w-full border-t border-gray-300" />
