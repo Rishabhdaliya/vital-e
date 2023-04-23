@@ -22,8 +22,7 @@ export const Enquiryform = ({ notify, setNotify }: any) => {
     },
     validationSchema: validationSchema,
     onSubmit: (values: object, { resetForm }: any) => {
-      console.log(values);
-      //   formSubmitHandler(values);
+      formSubmitHandler(values);
       setNotify({
         open: true,
         heading: "Your email has been sent successfully!",
