@@ -66,7 +66,7 @@ export const Enquiryform = ({ notify, setNotify }: any) => {
       <div className="isolate bg-white px-1 py-3 sm:py-8 lg:px-1">
         <div className="mx-auto max-w-xs text-center">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-            Get In Touch
+            Send Us Your Enquiry Now!
           </h2>
         </div>
         <form

@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Layout/Navbar/Navbar";
+import { Navbar } from "@/components/Layout/Navbar";
 import Link from "next/link";
 import React from "react";
 

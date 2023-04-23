@@ -17,18 +17,17 @@ export const HeroSection = () => {
       <Snackbar notify={notify} setNotify={setNotify} />
       <div className="container ">
         <div className="grid mt-5 bg-white sm:grid-flow-col gap-4">
-          <div className="py-24 sm:py-32 order-2 sm:order-1 ">
+          <div className="py-4 mb-10 text-center sm:text-left sm:py-32 order-2 sm:order-1 ">
             <div className="mx-auto max-w-5xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0">
-                <p className="text-base font-semibold leading-1 text-gray-600">
-                  Get the help you need
+                <p className="text-base text-sm  leading-1 text-gray-600">
+                  RSV-Healthcare Presents's
                 </p>
-                <h2 className="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-5xl">
-                  Support center
+                <h2 className="mt-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                  Revive and Hydrate with Vital-E ORS
                 </h2>
-                <p className="mt-6 text-lg sm:max-w-lg leading-8 text-gray-600">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo.
+                <p className="mt-2 sm:mt-6 text-md sm:max-w-lg  text-gray-600">
+                  Your Ultimate Solution for Dehydration!
                 </p>
               </div>
             </div>
